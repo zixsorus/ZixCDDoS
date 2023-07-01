@@ -341,7 +341,7 @@ def main():
                 ip = cnc.split()[1]
                 port = cnc.split()[2]
                 dur = cnc.split()[3]
-                os.system(f'python2 udp.py {ip} {port} {dur} 0')
+                os.system(f'python3 udp.py {ip} {port} {dur} 0')
             except IndexError:
                 print('Usage: udp <ip> <port> <time 0 = infinite>')
                 print('Example: udp 1.1.1.1 80 60')
