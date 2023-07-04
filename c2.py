@@ -769,4 +769,5 @@ def login():
         ascii_vro()
         main()
 
-login()
+# login()
+main()
