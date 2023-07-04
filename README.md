@@ -74,7 +74,7 @@ How to use:
 - Recommended in shell of google, azure,...
 - Using vps with high speed will be stronger
 
-git clone https://github.com/hoaan1995/ZxCDDoS/
+git clone https://github.com/zixsorus/ZixCDDoS/
 cd ZxCDDoS/
 npm i requests
 npm i https-proxy-agent
